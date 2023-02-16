@@ -10,12 +10,34 @@
 <body>
     <header class="header">
         <section class="first-header-section">
-            <span class="reset-game-btn">Again</span>
+            <span class="reset-game-btn" id="reset-game-btn">Again</span>
             <span>(Between 1 and 20)</span>
         </section>
         <h1>Guess the number!</h1>
         <button class="random-number" id="random-number">?</button>
     </header>
+    <footer>
+        <section class="left-section">
+            <form>
+                <label for="number-input">Enter Your Number</label>
+                <input type="number" class="number-input" id="number-input" max="20" min="0">
+            </form>
+            <button class="check-btn" id="check-btn">Check</button>
+        </section>
+        <section class="right-section" id="right-section">
+            <div class="right-section-container">
+                <span class="message" id="message">Start Guessing</span>
+                <div class="score-container">
+                    <span class="_score">
+                        Score: <span class="score" id="score">20</span>
+                    </span>
+                    <span class="_score">
+                        Hight Score: <span class="high-score" id="high-score">0</span>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
