@@ -116,6 +116,11 @@ footer .left-section form input:focus{
   border: inherit;
 }
 
+.check-btn.disable{
+    cursor: not-allowed;
+    background-color: #cccccc;
+}
+
 .right-section {
     position: relative;
     display: flex;
